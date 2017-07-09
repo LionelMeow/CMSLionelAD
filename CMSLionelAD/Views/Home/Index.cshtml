@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="page-header" style="text-align:center">
+    <h1>Maersk Container Management System powered by Azure</h1>
+</div>
+
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#bs-carousel" data-slide-to="1"></li>
+        <li data-target="#bs-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="hero">
+                <hgroup style="text-transform:none !important">
+                    <h1>Schedule</h1>
+                    <h3>Create shipments with attached containers that ship will service for</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">
+                    @Html.ActionLink("Schedules", "Index", "Schedules", null, new { @style = "color:white" })
+                </button>
+            </div>
+        </div>
+        <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="hero">
+                <hgroup style="text-transform:none !important">
+                    <h1>Business</h1>
+                    <h3>Connect with different organisations easily powered by Azure</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">
+                    @Html.ActionLink("Employees", "Index", "Employees", null, new { @style = "color:white" })
+                </button>
+            </div>
+        </div>
+        <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="hero">
+                <hgroup style="text-transform:none !important">
+                    <h1>Containers</h1>
+                    <h3>Manager containers for effective transactions</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">
+                    @Html.ActionLink("Containers", "Index", "Containers", null, new { @style = "color:white" })
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
